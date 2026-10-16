@@ -3,6 +3,7 @@ import { DeckApp } from "@/components/deck-app";
 
 export const Route = createFileRoute("/")({ component: Home });
 
-function Home() {
+export function Home() {
   return <DeckApp />;
 }
+
