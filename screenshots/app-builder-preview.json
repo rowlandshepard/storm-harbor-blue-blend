@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Cord Deck",
+      "hasCanvas": false,
+      "bodyTextLen": 1064,
+      "bodyTextHash": "5719eb220227ef176d2e43898150d37f1ec5113910e7bccf57e22bc32902fb19",
+      "bodyTextPrefix": "11 SPINAL CORD 102 LECTURE 11 Cord Deck Spinal cord, pathways, a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Cord Deck",
+      "hasCanvas": false,
+      "bodyTextLen": 943,
+      "bodyTextHash": "5f1a72e13676747ced333284ed067d9433f50c9dc4fbdbfdf865fde11502a17a",
+      "bodyTextPrefix": "LECTURE 11 Cord Deck Spinal cord, pathways, and the peripheral n",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

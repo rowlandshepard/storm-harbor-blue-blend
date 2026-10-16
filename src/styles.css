@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #efe8db;
+  --color-paper-deep: #e4dccb;
+  --color-cream: #f7f3eb;
+  --color-ink: #1c2822;
+  --color-muted: #5e6b63;
+  --color-line: #d4cbb8;
+  --color-teal: #1b6b58;
+  --color-teal-deep: #145445;
+  --color-copper: #b5523a;
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .sheet {
+    box-shadow:
+      0 1px 0 var(--color-line),
+      0 18px 40px color-mix(in srgb, var(--color-ink) 8%, transparent);
+  }
+  .spine {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  .rise {
+    animation: rise 180ms ease-out;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
